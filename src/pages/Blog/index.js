@@ -1,8 +1,8 @@
 import { ScrollView, StyleSheet, View } from 'react-native'
 import React, { useEffect } from 'react'
 import { Card, Header } from '../../components'
-import { GetBlog } from '../../actions'
 import { connect } from 'react-redux'
+import { GetBlog } from '../../actions'
 
 const Blog = (props) => {
     useEffect(() => {
