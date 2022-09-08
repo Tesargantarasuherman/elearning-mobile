@@ -5,7 +5,7 @@ import { Button, Gap, Header, Input } from '../../components'
 
 const SignIn = ({ navigation }) => {
     return (
-        <ScrollView>
+        <ScrollView style={styles.body}>
             <Header route="GetStarted" onPress={() => navigation.navigate('GetStarted')} />
             <View style={styles.container}>
                 <View style={styles.logo}>
@@ -34,6 +34,10 @@ const SignIn = ({ navigation }) => {
 export default SignIn
 
 const styles = StyleSheet.create({
+    body:{
+        flex:1,
+        backgroundColor: 'white'
+    },
     container: {
         flex: 1,
         padding: 40,

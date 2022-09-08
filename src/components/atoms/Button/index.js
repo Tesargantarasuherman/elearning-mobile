@@ -15,8 +15,8 @@ export default Button
 const styles = StyleSheet.create({
   container:(type)=>({
     backgroundColor:type ==='secondary' ? 'white' : '#D43E2A',
-    paddingVertical:10,
-    paddingHorizontal:30,
+    paddingVertical:5,
+    paddingHorizontal:20,
     borderRadius:10,
     borderWidth:2,
     borderColor:color.background.main

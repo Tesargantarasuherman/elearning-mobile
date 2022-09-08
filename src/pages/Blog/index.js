@@ -35,7 +35,8 @@ const mapDispatchToProps = {
 export default connect(mapStateToProps, mapDispatchToProps)(Blog)
 const styles = StyleSheet.create({
     container: {
-        margin: 10
+        margin: 10,
+        flex:1,
     },
 
 })
