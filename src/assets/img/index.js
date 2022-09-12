@@ -1,3 +1,3 @@
 import Background from './background.jpg'
-
-export {Background}
+import ImgProfile from "./Profile.png";
+export {Background,ImgProfile}
