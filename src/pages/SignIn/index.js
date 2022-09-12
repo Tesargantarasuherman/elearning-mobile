@@ -20,7 +20,7 @@ const SignIn = ({ navigation }) => {
                         <Input label="Email" placeholder="Masukkan Email" />
                         <Input label="Password" placeholder="Masukkan Password" />
                         <View style={styles.containerButton}>
-                            <Button title="Sign In" />
+                            <Button title="Sign In" onPress={() => navigation.navigate('ProfilePicture')}/>
                             <Gap height={5} />
                             <Button title="Sign Up" type="secondary" onPress={() => navigation.navigate('SignUp')} />
                         </View>

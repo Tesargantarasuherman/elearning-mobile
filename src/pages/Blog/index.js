@@ -9,7 +9,7 @@ const Blog = (props) => {
     }, [])
     return (
         <ScrollView>
-            <Header title="Blog" />
+            {/* <Header title="Blog" /> */}
             <View style={styles.container}>
                 {
                     props.blog && props.blog.length >= 1 ? (
