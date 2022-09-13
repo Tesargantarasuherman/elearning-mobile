@@ -16,6 +16,7 @@ const ProfilePicture = () => {
             </View>
             <View>
                 <Button title="Upload and Continue" />
+                <Text>Skip for this</Text>
             </View>
         </View>
     )

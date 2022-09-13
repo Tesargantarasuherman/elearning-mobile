@@ -13,7 +13,7 @@ const Router =()=>{
           <Stack.Screen name="GetStarted" component={GetStarted} options={{headerShown:false}} />
           <Stack.Screen name="SignIn" component={SignIn} options={{headerShown:false}} />
           <Stack.Screen name="SignUp" component={SignUp} options={{headerShown:false}} />
-          <Stack.Screen name="ProfilePicture" component={ProfilePicture} options={{headerShown:true}} />
+          <Stack.Screen name="ProfilePicture" component={ProfilePicture} options={{headerShown:true, title: 'Profile Picture' }} />
           <Stack.Screen name="Blog" component={Blog} options={{headerShown:true}} />
         </Stack.Navigator>
       );

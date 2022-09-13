@@ -3,22 +3,24 @@ import React, { useEffect } from 'react'
 import { Card, Header } from '../../components'
 import { connect } from 'react-redux'
 import {GetBlog} from '../../actions'
-const Blog = (props) => {
+
+export const Blog = (props) => {
     useEffect(() => {
-        props.GetBlog()
+        setInterval(() => {
+            props.GetBlog()
+        console.log(props)
+    }, 100);
     }, [])
     return (
         <ScrollView>
             {/* <Header title="Blog" /> */}
             <View style={styles.container}>
                 {
-                    props.blog && props.blog.length >= 1 ? (
                         props.blog.map(blog => {
                             return (
                                 <Card id={blog.id} title={blog.title} body={blog.body} />
                             )
                         })
-                    ) : (<View><Text>Loading</Text></View>)
                 }
             </View>
         </ScrollView>
@@ -26,7 +28,7 @@ const Blog = (props) => {
 }
 
 const mapStateToProps = (state) => ({
-    blog: state.blog.blog
+    blog: state?.blog?.blog
 })
 
 const mapDispatchToProps = {
