@@ -2,6 +2,7 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Background, LLogo } from '../../assets'
 import { Button } from '../../components'
+import { fonts } from '../../utils'
 
 const GetStarted = ({navigation}) => {
     return (
@@ -12,7 +13,7 @@ const GetStarted = ({navigation}) => {
             </View>
             <View style={styles.containerButton}>
                 <Button title="Login" onPress={() => navigation.navigate('SignIn')}/>
-                <Button type="secondary" title="Get Started" onPress={() => navigation.navigate('Blog')}/>
+                <Button type="secondary" title="Get Started" onPress={() => navigation.replace('MainApp')}/>
             </View>
         </ImageBackground>
     )
@@ -29,12 +30,12 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 28,
-        fontWeight: '600',
         color: '#D43E2A',
         marginTop: 91,
         textShadowColor:'white',
         textShadowOffset: {width: 0, height: 5},
-        textShadowRadius:5
+        textShadowRadius:5,
+        fontFamily:fonts.primary[700]
 
     },
     containerButton:{

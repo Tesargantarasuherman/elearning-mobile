@@ -16,7 +16,7 @@ const ProfilePicture = () => {
             </View>
             <View>
                 <Button title="Upload and Continue" />
-                <Text>Skip for this</Text>
+                <Text style={styles.link}>Skip for this</Text>
             </View>
         </View>
     )
@@ -27,13 +27,14 @@ export default ProfilePicture
 const styles = StyleSheet.create({
     page: {
         flex: 1,
-        alignItems: 'center',
         backgroundColor: 'white',
         justifyContent:'space-between',
-        paddingVertical:20
+        paddingHorizontal:40,
+        paddingVertical:50,
     },
     content:{
         flex:1,
+        paddingVertical:50,
         alignItems: 'center',
     },
     avatar: {
@@ -64,6 +65,12 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: '#333333',
         fontWeight: '600'
+    },
+    link:{
+        textAlign:'center',
+        fontSize:16,
+        fontWeight:'500',
+        marginVertical:10
     }
 
 })

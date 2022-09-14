@@ -3,25 +3,28 @@ import React, { useEffect } from 'react'
 import { Card, Header } from '../../components'
 import { connect } from 'react-redux'
 import {GetBlog} from '../../actions'
-
-export const Blog = (props) => {
+const Blog = (props) => {
     useEffect(() => {
-        setInterval(() => {
-            props.GetBlog()
+        props.GetBlog()
         console.log(props)
-    }, 100);
     }, [])
+
+    const renderBlog=()=>{
+        
+        return props?.blog && props?.blog?.length >= 1 ? (
+            props.blog.map(blog => {
+                return (
+                    <Card key={blog.id} title={blog.title} body={blog.body} />
+                )
+            })
+        ) : (<View><Text>Loading</Text></View>)
+        
+    }
     return (
         <ScrollView>
             {/* <Header title="Blog" /> */}
             <View style={styles.container}>
-                {
-                        props.blog.map(blog => {
-                            return (
-                                <Card id={blog.id} title={blog.title} body={blog.body} />
-                            )
-                        })
-                }
+                {renderBlog()}
             </View>
         </ScrollView>
     )
