@@ -21,7 +21,7 @@ const TabItem = ({isFocused,onPress,onLongPress,label}) => {
         accessibilityStates={isFocused ? ['selected'] : []}
         onPress={onPress}
         onLongPress={onLongPress}
-        style={styles.container}
+        style={[styles.container, label == 'Class' ? {transform: [{ translateY: -20 }],backgroundColor:'red',borderRadius:10}:null]}
       >
         <Icon />
         <Text style={styles.text(isFocused)}>
@@ -37,10 +37,12 @@ const styles = StyleSheet.create({
     container : {
         flex:1,
         alignItems :'center',
+        padding:5,
+        marginHorizontal:2,
+        // borderRadius:50,
     },
     text : (isFocused)=> ({
-        fontSize : 13,
+        fontSize : 10,
         color: isFocused ? 'black' : 'white',
-        marginTop:2
     })
 })
