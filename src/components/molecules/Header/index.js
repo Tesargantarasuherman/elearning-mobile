@@ -25,8 +25,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: 'white',
     alignItems:'center',
-    paddingVertical:5,
+    paddingVertical:10,
     paddingHorizontal:10,
+    zIndex:9999,
+    
   },
   text:(title)=>({
     textAlign:'center',

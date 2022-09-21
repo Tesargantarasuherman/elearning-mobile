@@ -22,7 +22,7 @@ const Blog = (props) => {
     }
     return (
         <ScrollView>
-            {/* <Header title="Blog" /> */}
+            <Header title="Blog" />
             <View style={styles.container}>
                 {renderBlog()}
             </View>
@@ -41,7 +41,7 @@ const mapDispatchToProps = {
 export default connect(mapStateToProps, mapDispatchToProps)(Blog)
 const styles = StyleSheet.create({
     container: {
-        margin: 10,
+        marginHorizontal: 20,
         flex: 1,
     },
 
