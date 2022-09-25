@@ -8,5 +8,7 @@ import IconBlog from './Blog.svg'
 import IconBlogActive from './BlogActive.svg'
 import IconClass from './Class.svg'
 import IconClassActive from './ClassActive.svg'
+import IconSearch from './Search.svg'
+import IconSort from './Sort.svg'
 
-export {LLogo,IconBack,IconProfile,IconPlus,IconHomeNotActive,IconHomeActive,IconBlog,IconBlogActive,IconClass,IconClassActive}
+export {LLogo,IconBack,IconProfile,IconPlus,IconHomeNotActive,IconHomeActive,IconBlog,IconBlogActive,IconClass,IconClassActive,IconSearch,IconSort}

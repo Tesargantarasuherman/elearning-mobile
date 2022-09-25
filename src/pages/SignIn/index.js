@@ -2,6 +2,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { LLogo } from '../../assets'
 import { Button, Gap, Header, Input } from '../../components'
+import { fonts } from '../../utils'
 
 const SignIn = ({ navigation }) => {
     return (
@@ -36,7 +37,8 @@ export default SignIn
 const styles = StyleSheet.create({
     body:{
         flex:1,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        fontFamily:fonts.primary[600]
     },
     container: {
         flex: 1,
@@ -52,8 +54,8 @@ const styles = StyleSheet.create({
         flex: 5,
     },
     formTitle: {
-        fontWeight: 'bold',
-        fontSize: 20
+        fontSize: 20,
+        fontFamily:fonts.primary[600]
     },
     formDescription: {
         flex: 1

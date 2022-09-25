@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
     container: {
         borderRadius: 10,
         margin: 5,
-        overflow:'hidden'
+        overflow:'hidden',
+        backgroundColor:'white'
     },
     image:{ 
         width: '100%',
@@ -40,12 +41,12 @@ const styles = StyleSheet.create({
         padding:10
     },
     title: {
-        fontSize: 12,
+        fontSize: 14,
         fontWeight: 'bold',
         textTransform: 'uppercase'
     },
     description:{
-        fontSize:10,
+        fontSize:12,
         fontFamily:fonts.primary[600]
     },
     buttonDetail: {
