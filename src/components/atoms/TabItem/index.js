@@ -24,9 +24,9 @@ const TabItem = ({isFocused,onPress,onLongPress,label}) => {
         style={styles.container(isFocused)}
       >
         <Icon />
-        <Text style={styles.text(isFocused)}>
+        {/* <Text style={styles.text(isFocused)}>
           {label}
-        </Text>
+        </Text> */}
       </TouchableOpacity>
   )
 }
@@ -36,10 +36,12 @@ export default TabItem
 const styles = StyleSheet.create({
     container : (isFocused)=> ({
         flex:1,
+        minWidth:50,
         alignItems :'center',
-        padding:5,
-        marginHorizontal:2,
-        borderRadius: isFocused ? 10 : 0,
+        paddingHorizontal:7,
+        paddingVertical:15,
+        marginHorizontal:50,
+        borderRadius: isFocused ? 50 : 0,
         backgroundColor: isFocused ? '#D43E2A' : 'white'
     }),
     text : (isFocused)=> ({
