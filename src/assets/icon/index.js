@@ -10,5 +10,6 @@ import IconClass from './Class.svg'
 import IconClassActive from './ClassActive.svg'
 import IconSearch from './Search.svg'
 import IconSort from './Sort.svg'
+import IconLove from './Love.svg'
 
-export {LLogo,IconBack,IconProfile,IconPlus,IconHomeNotActive,IconHomeActive,IconBlog,IconBlogActive,IconClass,IconClassActive,IconSearch,IconSort}
+export {LLogo,IconBack,IconProfile,IconPlus,IconHomeNotActive,IconHomeActive,IconBlog,IconBlogActive,IconClass,IconClassActive,IconSearch,IconSort,IconLove}
