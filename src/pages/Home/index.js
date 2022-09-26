@@ -67,24 +67,34 @@ const Home = () => {
         <Text style={{fontFamily:fonts.primary[900],fontSize:16}}>
           Discover
         </Text>
-        <ScrollView>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <View style={{flex:1,flexDirection:'row',marginVertical:5}}>
           <Button title='All' type='secondary'/>
           <Gap width={10}/>
           <Button title='Popular' type='secondary'/>
           <Gap width={10}/>
-          <Button title='Most Viewed'/>
+          <Button title='Recomended'/>
+          <Gap width={10}/>
+          <Button title='Most Viewed' type='secondary'/>
           </View>
         </ScrollView>
       </View>
       <View style={{ flex: 6 }}>
-        <View style={{flex:1,width:200,backgroundColor:'white',height:200,borderRadius:5,overflow:'hidden',padding:5}}>
+        <View style={{flex:1,width:200,backgroundColor:'rgba(250,250,250,0.5)',height:180,borderRadius:5,overflow:'hidden',padding:10}}>
             <Image source=
               {{ uri: "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" }}
               style={{width:'100%',height:120,borderRadius:5}}
             />
-            <View style={{position:'absolute',top:0,right:5,backgroundColor:'white'}}>
+            <View style={{position:'absolute',top:20,right:20,backgroundColor:'#D43E2A',padding:10,borderRadius:20}}>
               <IconLove/>
+            </View>
+            <View style={{flex:1,flexDirection:'row',justifyContent:'space-between'}}>
+              <Text>Title</Text>
+              <Text>Stars</Text>
+            </View>
+            <View style={{flex:1,flexDirection:'row',justifyContent:'space-between'}}>
+              <Text>Title</Text>
+              <Text>Stars</Text>
             </View>
         </View>
       </View>
